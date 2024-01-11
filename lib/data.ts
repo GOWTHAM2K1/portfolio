@@ -4,7 +4,10 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import bilwa from "@/public/bilwa.png";
+import spoot from "@/public/spoot.png";
+import chat from "@/public/chat.png";
+
 
 
 export const links = [
@@ -63,11 +66,12 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "myNoteBook",
+    title: "Spotify-Clone",
     description:
-      "This project allows the user to store his diary entries in it, it has login functionality to it.Built front end and backend of the component using mern stack. ",
-    tags: ["React", "Express", "MongoDB", "JWT", "Bootstrap","Node"],
-    imageUrl: corpcommentImg,
+      "Built a Spotify clone with almost all functionalities of Spotify and the app uses supabase as storage and allows user to upload their song. ",
+    tags: ["Next JS","Tailwind","Typescript","Javascript","React", "Supabase"],
+    imageUrl: spoot,
+    websiteUrl:"https://spotify-clone-six-gray.vercel.app/",
   },
   {
     title: "newsApp",
@@ -75,13 +79,31 @@ export const projectsData = [
       "Built an news app which provides up to data news to the users this app uses news api to fetch data and provide the news.",
     tags: ["React", "Thunder client", "Javascript", "Bootstrap",],
     imageUrl: rmtdevImg,
+    websiteUrl:"https://github.com/GOWTHAM2K1",
   },
   {
-    title: "Shopping app",
+    title: "myNoteBook",
+    description:
+      "This project allows the user to store his diary entries in it, it has login functionality to it.Built front end and backend of the component using mern stack. ",
+    tags: ["React", "Express", "MongoDB", "JWT", "Bootstrap","Node"],
+    imageUrl: corpcommentImg,
+    websiteUrl:"https://github.com/GOWTHAM2K1",
+  },
+  {
+    title: "Chat-Bot-Builder",
+    description:
+      "A web apps which help the organizations to convert the audio files into a conversationals text which can be used to train custom chat bots.",
+    tags: ["Next JS","Tailwind","Typescript","Javascript","Openai api", "hugging face api"],
+    imageUrl: chat,
+    websiteUrl:"https://dataset-for-chatbots-builder.vercel.app/",
+  },
+  {
+    title: "Shopping app(bilwa)",
     description:
       "I am currently building a website for buying edible oils from the vendor.",
-    tags: ["React", "Express", "Mongo", "Tailwind", "Node"],
-    imageUrl: wordanalyticsImg,
+    tags: ["Wordpress", "Woocommerce"],
+    imageUrl: bilwa,
+    websiteUrl:"https://bilwawoodpressedoils.com",
   },
 ] as const;
 
@@ -98,5 +120,6 @@ export const skillsData = [
   "MongoDB",
   "Express",
   "Python",
+  "Docker"
 
 ] as const;
